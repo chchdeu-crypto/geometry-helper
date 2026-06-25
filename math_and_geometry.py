@@ -27,4 +27,17 @@ while True:
             result=float(3.14*radius*radius)
             print(f"fourmula: 3.14*radius*radius \n the circle area is {result}")
 
-      
+        case 4:
+            first_num = float(input('enter your first number '))
+            second_num =float(input('enter your second number '))
+            third_num = float(input('enter your third number '))
+
+            numbers = [ first_num, second_num, third_num]
+            side_a = numbers[0]
+            side_b = numbers[1]
+            side_c = numbers[2]
+
+            if side_a**2 + side_b**2 == side_c**2:
+                print(f'{first_num , second_num , third_num} are a pythagoras triad')
+            else:
+                print('not pythagoras triad')
