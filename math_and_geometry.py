@@ -1,6 +1,6 @@
 #menu
 while True:
-    menu = ['choose an option',
+    menu = ['\n choose an option',
         '1- triangle area calculater ',
         '2- square area calculater ' ,
         '3- circle area calculater',
@@ -26,6 +26,22 @@ while True:
             radius=float(input("enter your radius of the circle: "))
             result=float(3.14*radius*radius)
             print(f"fourmula: 3.14*radius*radius \n the circle area is {result}")
+
+        case 4:
+            first_num = float(input('enter your first number '))
+            second_num =float(input('enter your second number '))
+            third_num = float(input('enter your third number '))
+
+            numbers = [ first_num, second_num, third_num]
+            side_a = numbers[0]
+            side_b = numbers[1]
+            side_c = numbers[2]
+
+            if side_a**2 + side_b**2 == side_c**2:
+                print(f'{first_num , second_num , third_num} \n are a pythagoras triad')
+            else:
+                print('not pythagoras triad')
+
         case 5:
             num_1=float(input("enter firsr number: "))
             operator=input("enter opertor: ")
