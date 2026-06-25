@@ -1,6 +1,3 @@
-
-# triangle
-
 #menu
 while True:
     menu = ['choose an option',
@@ -11,17 +8,17 @@ while True:
         '5- calculater',
         '6- exit']
     print("\n".join(menu))
-    user_options = int(input('choose an option for the menu: '))
+    user_options = int(input('choose an option for the menu :'))
+    
     match user_options:
         case 1:
-            base=int(input("enter base "))
-            height=int(input("enter height "))
+            base=float(input("enter base "))
+            height=float(input("enter height "))
             result=base * height/2
             print(f"formula: base * height /2\n the area is {result}")
 
-
-    
-
-
-        
-            
+        case 2:
+             base1 = float(input('enter base '))
+             base2 = float(input('enter base '))
+             result = base1 * base2 
+             print(f'formula: base1 * base2 \n the area is {result}' )
