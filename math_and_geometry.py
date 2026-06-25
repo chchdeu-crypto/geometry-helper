@@ -1,6 +1,6 @@
 #menu
 while True:
-    menu = ['choose an option',
+    menu = ['\n choose an option',
         '1- triangle area calculater ',
         '2- square area calculater ' ,
         '3- circle area calculater',
@@ -38,6 +38,27 @@ while True:
             side_c = numbers[2]
 
             if side_a**2 + side_b**2 == side_c**2:
-                print(f'{first_num , second_num , third_num} are a pythagoras triad')
+                print(f'{first_num , second_num , third_num} \n are a pythagoras triad')
             else:
                 print('not pythagoras triad')
+
+        case 5:
+            num_1=float(input("enter firsr number: "))
+            operator=input("enter opertor: ")
+            num_2=float(input("enter second number: "))
+            match operator:
+                case "+":
+                    result=num_1+num_2
+                    print(f"fuormula: {num_1} + {num_2} \n the result is: {result}")
+                case "-":
+                    result=num_1-num_2
+                    print(f"fourmula: {num_1} - {num_2} \n the result is: {result}")    
+                case "*":
+                    result=num_1*num_2
+                    print(f"fourmula: {num_1} * {num_2} \n the result is: {result}")
+                case "/":
+                    if num_2 == 0:
+                        print("illegel action")
+                    else:
+                        result=num_1/num_2
+                        print(f"fourmula: {num_1} / {num_2} \n the result is: {result}")
