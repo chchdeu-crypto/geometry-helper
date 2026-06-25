@@ -1,6 +1,6 @@
 #menu
 while True:
-    menu = ['\n choose an option',
+    menu = ['\n >>>choose an option<<<',
         '1- triangle area calculater ',
         '2- square area calculater ' ,
         '3- circle area calculater',
@@ -62,3 +62,6 @@ while True:
                     else:
                         result=num_1/num_2
                         print(f"fourmula: {num_1} / {num_2} \n the result is: {result}")
+        case 6:
+            print("good bye")
+            break
