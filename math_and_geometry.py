@@ -16,9 +16,15 @@ while True:
             height=float(input("enter height "))
             result=base * height/2
             print(f"formula: base * height /2\n the area is {result}")
-
         case 2:
-             base1 = float(input('enter base '))
-             base2 = float(input('enter base '))
-             result = base1 * base2 
-             print(f'formula: base1 * base2 \n the area is {result}' )
+            base1 = float(input('enter base '))
+            base2 = float(input('enter base '))
+            result = base1 * base2 
+            print(f'formula: base1 * base2 \n the area is {result}' )
+ 
+        case 3:
+            radius=float(input("enter your radius of the circle: "))
+            result=float(3.14*radius*radius)
+            print(f"fourmula: 3.14*radius*radius \n the circle area is {result}")
+
+      
