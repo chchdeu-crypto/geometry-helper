@@ -64,4 +64,3 @@ while True:
                         print(f"fourmula: {num_1} / {num_2} \n the result is: {result}")
         case 6:
             print("good bye")
-            break
